@@ -1,0 +1,52 @@
+need 2 things: 
+FastAPI, webserver-usually we have tomcat,node,xampp
+we use FASTAPI and Uvicorn webserver in my project
+setup everything about webserver i.e. uvicorn and we can import FastAPI library and use classes in there
+example: Lets say!
+client --> server (file server-job is to give files (service)using FTP protocol)
+client --> server (webserver- job is to give data to the user in JSON or HTML format)
+
+What is the need of server?
+can access database content directly from frontend right!
+Well NO! because it is not secure, data is not proccessed, we don't want to write SQL, not formatted
+So, we build backend so that it does processing, applying logic, fetching data from database (JSON format)
+it can also respond just the layout with or without data
+---------------------------------------------------------------------
+
+REST API
+representational state transfer- sending a state from server to client when requested for data
+- Sending data in representational format { eg: JSON (easy to represent)}
+endpoints example:
+/api/explore 
+/api/payments
+--in order to access the server we have to access their API's
+
+if client wants to get data from server
+clients sends a request server has to accept it
+CRUD operations:HTTP methods-
+GET    -read
+POST   -create
+PUT    -update
+DELETE - delete 
+------------------------------------------------
+after doing CRUD operations on a list 
+Now its time to store and connect the server to a database and store the data in it
+We have multiple options to do it like postgresql,mysql,..etc
+Here, we are using "SQL Alchemy" - the python toolkit and object relational mapper-ORM ( same as hibernate in Java)
+This reduces SQL operations manually as we can do data operations easily in python(programming language)
+
+---> here i have created a postgresql server in terminal itself didnt use pg admin
+created int erminal using some commands
+ Connected all the data to the server using APIs
+
+Used database_model and database_config for ORM model
+ -------Its time to connect backend to frontend
+ make sure that all the endpoints in main.py(backend) and app.js (frontend) are same like /products
+ then got CORS errors
+ cross origin resource sharing - when we have two applications running on the same server (Hacking issues)
+ -give permissions
+ 
+
+
+
+

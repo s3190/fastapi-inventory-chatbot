@@ -1,0 +1,9 @@
+myenv/
+__pycache__/
+.env
+frontend/node_modules/
+dist/
+frontend/build/
+.vscode/
+*.pyc
+.DS_Store
